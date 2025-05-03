@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/mobile-first-responsive-order-summary-component-JFyvIEtrkW](Frontend Mentor)
-- Live Site URL: [https://fem-ordersummarycomponent-vb.netlify.app/](Netlify)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/mobile-first-responsive-order-summary-component-JFyvIEtrkW)
+- Live Site URL: [Netlify](https://fem-ordersummarycomponent-vb.netlify.app/)
 
 ## My process
 
