@@ -1,0 +1,170 @@
+/* body details and root colors */
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* for box shadows- not in original template */
+    --bright-blue-shadow: hsla(245, 75%, 52%, 0.17);
+    --xtra-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    color: var(--dark-blue);
+}
+
+/* typography */
+
+.red-hat-display {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500, 700, 900;
+    font-style: normal;
+  }
+
+h1, strong, .pricing a {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.text {
+    max-width: 250px;
+    line-height: 1.7;
+    padding:0 1.25em 1.56em 1.25em;
+}
+
+/* wrappers */
+
+.wrapper, .pricing-table {
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper, .text {
+    text-align: center;
+}
+
+.wrapper, #card main {
+    padding: 1.56em;
+}
+
+/* main content */
+
+#card {
+    width: 350px;
+    height: 610px;
+    background-color: white;
+}
+
+#hero {
+    height: 165px;
+    background: var(--bright-blue) url(/images/illustration-hero.svg) no-repeat;
+    background-size: cover;
+    border-bottom-right-radius:0 !important;
+    border-bottom-left-radius:0 !important;
+}
+
+#card, #hero {
+    border-radius: 1.56em;
+}
+
+#hero, .btn, .pricing {
+    width: 100%;
+}
+
+.checkout {
+    padding-top: 1.875em;
+}
+
+.btn {
+    font-size: 1.10rem;
+    border: none;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    background-color: transparent;
+    margin: 0.5em 0;
+    height: 55px; 
+}
+
+.btn, a {
+    cursor: pointer;
+}
+
+.btn-checkout {
+background-color: var(--bright-blue);
+color: var(--xtra-pale-blue);
+box-shadow:0 1.25em 0.93em var(--bright-blue-shadow);
+}
+
+.btn-checkout:hover, .pricing a:hover {
+    opacity: 0.65;
+    text-decoration: none;
+}
+
+.cancel:hover {
+    color: var(--dark-blue)
+}
+
+footer {
+    margin: 2.5em;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: 0.8fr 1.985fr 2fr;
+    justify-items: center;
+    gap: 0.93em;
+}
+
+.wrapper, #card, .btn, .pricing {
+    box-sizing: border-box;
+}
+
+.pricing {
+    max-height: 100px;
+    width: auto;
+    background-color: var(--xtra-pale-blue);
+    padding: 0.625em 0.93em;
+}
+
+.pricing, .btn {
+    border-radius: 0.625em;
+}
+
+.pricing a {
+    color: var(--bright-blue);
+    text-decoration: underline;
+}
+
+.pricing img {
+    width: 50px;
+}
+
+/* breakpoints: - Mobile: TARGET 375px
+- Desktop: TARGET 1440px
+
+Also targeting most inbetween screen-size values */
+
+@media (min-width: 31.25em){
+    body {
+        background: var(--pale-blue) url(/images/pattern-background-mobile.svg) no-repeat;
+        background-size: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background: var(--pale-blue) url(/images/pattern-background-desktop.svg) no-repeat 0% -50%;
+        background-size: auto;
+    }
+}
