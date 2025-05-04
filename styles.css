@@ -50,11 +50,11 @@ h1 {
     flex-direction: column;
 }
 
-.wrapper, .text {
+.wrapper, .text, footer {
     text-align: center;
 }
 
-.wrapper, #card main {
+#card main {
     padding: 1.56em;
 }
 
@@ -64,17 +64,17 @@ h1 {
     width: 350px;
     height: 610px;
     background-color: white;
+    overflow: hidden;
 }
 
 #hero {
     height: 165px;
     background: var(--bright-blue) url(/images/illustration-hero.svg) no-repeat;
     background-size: cover;
-    border-bottom-right-radius:0 !important;
-    border-bottom-left-radius:0 !important;
+    width: 100%;
 }
 
-#card, #hero {
+#card {
     border-radius: 1.56em;
 }
 
@@ -158,13 +158,13 @@ Also targeting most inbetween screen-size values */
 @media (min-width: 31.25em){
     body {
         background: var(--pale-blue) url(/images/pattern-background-mobile.svg) no-repeat;
-        background-size: auto;
+        background-size: 100%;
     }
 }
 
 @media (min-width: 600px) {
     body {
-        background: var(--pale-blue) url(/images/pattern-background-desktop.svg) no-repeat 0% -50%;
-        background-size: auto;
+        background: var(--pale-blue) url(/images/pattern-background-desktop.svg) no-repeat;
+        background-size: 100%;
     }
 }
