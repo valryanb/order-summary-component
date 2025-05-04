@@ -31,7 +31,7 @@ h1, strong, .pricing a {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .text {
@@ -61,15 +61,15 @@ h1 {
 /* main content */
 
 #card {
-    width: 425px;
-    height: 689px;
+    width: 450px;
+    height: 679px;
     background-color: white;
     overflow: hidden;
     align-content: center;
 }
 
 #hero {
-    height: 230px;
+    max-height: 220px;
     background: var(--bright-blue) url(/images/illustration-hero.svg) no-repeat;
     background-size: cover;
     width: 100%;
@@ -93,7 +93,7 @@ h1 {
     color: var(--desaturated-blue);
     font-weight: 700;
     background-color: transparent;
-    margin: 0.8em 0;
+    margin: 1.0em 0;
     height: 55px; 
 }
 
@@ -132,9 +132,9 @@ footer {
 }
 
 .pricing {
-    max-height: 100px;
+    height: 100px;
     background-color: var(--xtra-pale-blue);
-    padding: 0.625em 0.93em;
+    padding: 1.625em 0.93em;
 }
 
 .text, .pricing, .btn-checkout {
