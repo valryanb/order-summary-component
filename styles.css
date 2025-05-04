@@ -62,14 +62,14 @@ h1 {
 
 #card {
     width: 425px;
-    height: 610px;
+    height: 689px;
     background-color: white;
     overflow: hidden;
     align-content: center;
 }
 
 #hero {
-    height: 165px;
+    height: 230px;
     background: var(--bright-blue) url(/images/illustration-hero.svg) no-repeat;
     background-size: cover;
     width: 100%;
